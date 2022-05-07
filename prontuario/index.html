@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../home/style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Meu Jardim-e</title>
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <navbar class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="../assets/Jardim-e.png" alt="plantinha flor" class="logo-imagem">
+                <div class="nome">
+                    <h2>Jardim-</h2>
+                    <span>e</span>
+                </div>
+
+            </div>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a class="links color-green" href="../home/index.html">Home</a></li>
+                <li class="navbar-item"><a class="links color-green" href="../plantas/plantas.html">Plantas</a></li>
+                <li class="navbar-item"><a class="links color-green" href="../saude/saude.html">Saúde</a></li>
+
+            </ul>
+        </div>
+
+    </navbar>
+
+    <!-- SHOWCASE -->
+    <div class="show">
+        <div class="show-container">
+            <div class="card-dad">
+                <p class="titulo">Prontuario</p>
+                <div class="descricao-inicial">
+                    <div class="texto-doenca">
+                        <h1>Xablau</h1>
+                        <p>Sintomas:</p>
+                        <p>Manchas</p>
+                        <p>Perca de folhas</p>
+                    </div>
+                    <img src="./assets/icons8-brócolis-64.png">
+
+                </div>
+                <div>
+                    <h1>Tratamentos:</h1>
+                    <p>1-Poda</p>
+                    <p>2-Remedio</p>
+                    <div class="buttons">
+                        <a href="../home/index.html"><button class="btn">Ignorar</button></a>
+                        <button class="btn btn-tratamento">Aplicar Tratamento</button>
+                    </div>
+                </div>
+
+                <div class="modal">
+                    <div class="white-card">
+                        <p class="btn-fechar-modal">X</p>
+                        <h1>Tratamento</h1>
+                        <form>
+                            <div class="input input-1">
+                                Qual Opcao de tratamento voce escolhe?
+                                <br>
+                                <label for="opcao">Opcao:</label>
+                                <select id="opcao">
+                                    <option value="Remedio">Remedio</option>
+                                    <option value="Poda">Poda</option>
+                                    <option selected value="Agua de 2/2 hrs">Agua de 2/2 hrs</option>
+                                </select>
+                            </div>
+
+
+
+
+                            <button type="submit">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

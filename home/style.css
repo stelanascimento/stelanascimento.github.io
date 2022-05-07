@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nome {
+    display: flex;
+}
+
+.nome span {
+    color: greenyellow;
+    font-size: 56px;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #8B6755;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Square Peg', cursive;
+    font-size: 32px;
+
+    border-radius: 2px;
+
+}
+
+.navbar-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    padding: 30px 0;
+}
+
+.navbar-container ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+
+
+}
+
+.navbar-items {
+    margin-left: 500px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+
+}
+
+.links:hover {
+    color: greenyellow;
+}
+
+.logo h2 {
+    font-family: 'Square Peg', cursive;
+    font-size: 56px;
+
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-imagem {
+    height: 60px;
+    width: auto;
+}
+
+.show {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../assets/plantas-vasos-ar-puro.webp") center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+.btn-add {
+    all: unset;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    color: white;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background: #F9ABA5;
+
+}
+
+.btn-add:hover {
+    background-color: #FECFCA;
+    color: #b76862;
+}
+
+.card-home {
+    background-color: rgb(234, 222, 222);
+
+    padding: 30px;
+    width: 450px;
+    height: 450px;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.card-home p {
+    font-family: 'Square Peg', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.buttons-coluna {
+    display: flex;
+    flex-direction: column;
+
+    height: 200px;
+
+    justify-content: space-evenly;
+}
+
+.modal-adicionar {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-modal-home {
+
+    background-color: rgb(234, 222, 222);
+    border-radius: 8px;
+    padding: 30px 30px 10px 30px;
+    width: 500px;
+    height: 550px;
+    position: relative;
+
+    font-family: 'Square Peg', cursive;
+}
+
+.btn-fechar-modal {
+    font-size: 30px;
+    position: absolute;
+
+    left: 450px;
+
+    cursor: pointer;
+
+}
+
+.btn-x-2 {
+    left: 900px;
+}
+
+
+.modal-upload {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.card-pai-upload {
+    background-color: rgb(234, 222, 222);
+
+    font-size: 26px;
+    font-family: 'Square Peg', cursive;
+
+
+    padding: 20px;
+    width: 500px;
+    height: 420px;
+
+    border-radius: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-pai p {
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.btn {
+    font-family: 'Square Peg', cursive;
+    font-size: 36px;
+    font-weight: bold;
+
+    width: 111px;
+    height: 42px;
+
+    background: #F9ABA5;
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+.btn:hover,
+.btn-form:hover {
+    background-color: #FECFCA;
+    color: #b76862;
+
+}
+
+.btn-form {
+    cursor: pointer;
+    font-family: 'Square Peg', cursive;
+    background: #F9ABA5;
+    font-size: 30px;
+
+    color: white;
+
+    border-radius: 8px;
+    width: 111px;
+    height: 42px;
+
+    font-weight: bold;
+
+}
+
+.title {
+    color: #8B6755;
+}

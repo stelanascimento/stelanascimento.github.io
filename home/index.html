@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Meu Jardim-e</title>
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <navbar class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="../assets/Jardim-e.png" alt="plantinha flor" class="logo-imagem">
+                <div class="nome">
+                    <h2>Jardim-</h2>
+                    <span>e</span>
+                </div>
+
+            </div>
+            <ul class="navbar-items">
+                <li class="navbar-item"><a class="links color-green" href="./index.html">Home</a></li>
+                <li class="navbar-item"><a class="links color-green" href="../plantas/plantas.html">Plantas</a></li>
+                <li class="navbar-item"><a class="links color-green" href="../saude/saude.html">Saúde</a></li>
+
+            </ul>
+        </div>
+
+    </navbar>
+
+    <!-- SHOWCASE -->
+    <div class="show">
+        <div class="show-container">
+            <div class="card-home">
+                <p>Olá, Jessica!</p>
+                <p>Voce tem o total de 0 plantas.</p>
+                <div class="buttons-coluna">
+                    <button class="btn-add btn-1">Adicionar plantas</button>
+                    <button class="btn-add btn-2">Sobre Jardim-e</button>
+                </div>
+                <div class="modal-adicionar">
+                    <div class="card-modal-home">
+                        <span class="btn-fechar-modal btn-x-1">X</span>
+                        <h1>Site Jardim-e</h1>
+                        <p>Somo Amigos das Plantas</p>
+                        <p>Essa aplicação ajudara voce a descobrir como cuidar de suas plantas, identificar a especie,
+                            doenças e mais.</p>
+                        <p>No botao ADICIONAR PLANTAS, fazendo o upload da foto de sua planta, diremos qual especie que
+                            se trata.</p>
+                    </div>
+                </div>
+
+                <div class="modal-upload">
+                    <div class="card-pai-upload">
+                        <p class="btn-fechar-modal btn-x-2">X</p>
+                        <p class="title">Identificação da Espécie</p>
+                        <form>
+                            <div class="input input-1">
+                                Qual Opcao de tratamento voce escolhe?
+                                <br>
+                                <label for="opcao">Especie:</label>
+                                <select id="opcao">
+                                    <option value="Tomateira">Tomateira</option>
+                                    <option value="Cerejeira">Cerejeira</option>
+                                    <option value="Samambaia">Samambaia</option>
+                                    <option value="Cajueiro">Cajueiro</option>
+                                    <option selected value="Laranjeira">Laranjeira</option>
+                                </select>
+                            </div>
+                            <button class="btn-form" type="submit">Salvar</button>
+                        </form>
+
+
+                        <span>Clique em pesquisar, se nao souber qual especie se trata a
+                            planta.<br>
+                            Voce sera direcionado para o Google imagens, onde colocara a imagem, <br>
+                            Para assim descobrir a especie, e assinalar aqui.</span>
+                        <a href="https://www.google.com/imghp" target="blank"><button class="btn">Pesquisar</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

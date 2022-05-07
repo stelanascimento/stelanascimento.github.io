@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../home/style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Pagina Login</title>
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <navbar class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="../assets/Jardim-e.png" alt="plantinha flor" class="logo-imagem">
+                <div class="nome">
+                    <h2>Jardim-</h2>
+                    <span>e</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </navbar>
+
+    <!-- SHOWCASE -->
+    <div class="show">
+        <div class="card">
+            <h1>Login</h1>
+            <div class="respostas">
+                <form>
+                    <div class="input input-email">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="input input-senha">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" required>
+                        <button class="olho" type="button">
+                            <div class="foto-1">
+                                <img width="20px" onclick="olhoClicar()" src="./assets/olho-fechado.svg" alt="Olho ">
+                            </div>
+
+
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+            <a href="../home/index.html"><button class="btn" type="submit">Entrar</button></a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
