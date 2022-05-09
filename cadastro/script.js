@@ -16,18 +16,18 @@ function olhoClicar(){
 
 function mostrarSenha(){
     inputSenha.type = "text";
-    olho.src = './assets/olho-aberto.svg'
+    olho.src = '../login/assets/olho-aberto.svg'
 }
 
 function esconderSenha(){
     inputSenha.type = "password";
-    olho.src = './assets/olho-fechado.svg'
+    olho.src = '../login/assets/olho-fechado.svg'
 
 }
 
-formulario.addEventListener('submit', function(event){
-    if(!inputs.value || !inputSenha.value){
-        event.preventDefault();  // funcao que previni alguns comportamentos padroes 
-    }
+// formulario.addEventListener('submit', function(event){
+//     if(!inputs.value || !inputSenha.value){
+//         event.preventDefault();  // funcao que previni alguns comportamentos padroes 
+//     }
 
-})
+// })

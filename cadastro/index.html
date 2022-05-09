@@ -35,31 +35,42 @@
     <!-- SHOWCASE -->
     <div class="show">
         <div class="card">
-            <h1>Login</h1>
+            <h1>Cadastro</h1>
             <div class="respostas">
-                <form action="https://stelanascimento.github.io/home/">
+                <form action="https://stelanascimento.github.io/login/">
                     <div class="input input-email">
                         <label for="email">Email</label>
-                        <input id="email" type="email" required placeholder="email@gmail.com">
+                        <input id="email" type="email" required>
                     </div>
                     <div class="input input-senha">
                         <label for="senha">Senha</label>
-                        <input id="senha" type="password" required placeholder="coxinha123">
+                        <input id="senha" type="password" required>
                         <button class="olho" type="button">
                             <div class="foto-1">
-                                <img width="20px" onclick="olhoClicar()" src="./assets/olho-fechado.svg" alt="Olho ">
+                                <img width="20px" onclick="olhoClicar()" src="../login/assets/olho-fechado.svg"
+                                    alt="Olho ">
                             </div>
 
 
                         </button>
 
                     </div>
+                    <div class="input input-cidade">
+                        <label for="Cidade">Cidade</label>
+                        <input type="text" id="Cidade" required>
+                    </div>
+                    <div class="input input-estado">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" required>
+                    </div>
+                    <div class="input input-País">
+                        <label for="País">País</label>
+                        <input type="text" id="País" required>
+                    </div>
 
-                    <button class="btn" type="submit">Entrar</button>
+                    <button class="btn" type="submit">Cadastrar</button>
                 </form>
-                <p>Cadastre-se <a href="../cadastro/index.html">aqui</a></p>
             </div>
-
 
 
 
