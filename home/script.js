@@ -40,3 +40,16 @@ fechar.addEventListener('click',function(){
    modalUpload.style.display = 'none';
 })
 
+async function getConteudo(){
+    
+    try {
+        const response = await fetch('http://localhost:6969/users') 
+        // console.log(response)
+        const data = await response.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getConteudo()

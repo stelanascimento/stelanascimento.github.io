@@ -25,9 +25,23 @@ function esconderSenha(){
 
 }
 
-formulario.addEventListener('submit', function(event){
-    if(!inputs.value || !inputSenha.value){
-        event.preventDefault();  // funcao que previni alguns comportamentos padroes 
-    }
+// formulario.addEventListener('submit', function(event){
+//     if(!inputs.value || !inputSenha.value){
+//         event.preventDefault();  // funcao que previni alguns comportamentos padroes 
+//     }
 
-})
+// })
+
+// async function getConteudo(){
+    
+//     try {
+//         const response = await fetch('http://localhost:6969/users') 
+//         // console.log(response)
+//         const data = await response.json()
+//         console.log(data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// getConteudo()
