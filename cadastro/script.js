@@ -37,8 +37,8 @@ formulario.addEventListener('submit', function(event){
 async function getDados(){
     try {  
         const body = {
-            name: name,
-            age: age
+            nome: nome,
+            senha: senha
         };
     const response = await fetch('http://localhost:6969/users',{
         method: 'POST',

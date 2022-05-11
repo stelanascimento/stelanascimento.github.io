@@ -47,13 +47,13 @@ async function getConteudo(){
         // console.log(response)
         const data = await response.json()
         console.log(data)
-        console.log(data[2].name)
+        console.log(data[0].name)
 
         document.getElementById('nome').textContent
-            = data[2].name;
+            = data[0].name;
 
         document.getElementById('total').textContent
-            = data[2].totalPlantas;
+            = data[0].totalPlantas;
             
 
 
