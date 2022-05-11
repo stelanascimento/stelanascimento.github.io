@@ -25,9 +25,33 @@ function esconderSenha(){
 
 }
 
-// formulario.addEventListener('submit', function(event){
-//     if(!inputs.value || !inputSenha.value){
-//         event.preventDefault();  // funcao que previni alguns comportamentos padroes 
-//     }
 
-// })
+formulario.addEventListener('submit', function(event){
+    if(!inputs.value || !inputSenha.value){
+        event.preventDefault();  // funcao que previni alguns comportamentos padroes 
+    }
+    let senha = inputSenha.value;
+    console.log(senha);
+})
+
+async function getDados(){
+    try {  
+        const body = {
+            name: name,
+            age: age
+        };
+    const response = await fetch('http://localhost:6969/users',{
+        method: 'POST',
+        headers:{
+            'Content-Type':'application/json',
+        },
+        body:JSON.stringify(body)
+    }) ;
+    const data = await response.json();
+    console.log(data);
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+getDados()

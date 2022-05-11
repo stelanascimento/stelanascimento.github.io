@@ -40,8 +40,8 @@
     <div class="show">
         <div class="show-container">
             <div class="card-home">
-                <p>Olá, Jessica!</p>
-                <p>Voce tem o total de 0 plantas.</p>
+                <p>Olá, <span id="nome"></span></p>
+                <p>Voce tem o total de <span id="total"></span> plantas.</p>
                 <div class="buttons-coluna">
                     <button class="btn-add btn-1">Adicionar plantas</button>
                     <button class="btn-add btn-2">Sobre Jardim-e</button>
@@ -63,8 +63,12 @@
                         <p class="btn-fechar-modal btn-x-2">X</p>
                         <p class="title">Identificação da Espécie</p>
                         <form>
+                            <div class="input input-nomePlanta">
+                                <label for="nomePlanta">Nome da Planta:</label>
+                                <input id="nomePlanta" type="text" required>
+                            </div>
                             <div class="input input-1">
-                                Qual Opcao de tratamento voce escolhe?
+                                Escolha a especie:
                                 <br>
                                 <label for="opcao">Especie:</label>
                                 <select id="opcao">

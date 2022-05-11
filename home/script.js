@@ -47,9 +47,21 @@ async function getConteudo(){
         // console.log(response)
         const data = await response.json()
         console.log(data)
+        console.log(data[2].name)
+
+        document.getElementById('nome').textContent
+            = data[2].name;
+
+        document.getElementById('total').textContent
+            = data[2].totalPlantas;
+            
+
+
     } catch (error) {
         console.log(error)
     }
 }
 
 getConteudo()
+
+
